@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Type title or author</p>
+
+        <form id="addBook" method="POST" action="/books/add">
+            <input name="title" placeholder="Title">
+            <input name="author" placeholder="Author">
+            <input name="publisher" placeholder="Publisher">
+            <input name="note" placeholder="Note">
+            <button>Add Book</button>
+        </form>
+
+        <p id="message">{{message}}</p>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
